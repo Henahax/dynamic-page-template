@@ -1,5 +1,5 @@
 {
-    "name": "sveltekit-stack",
+    "name": "dynamic-page-template",
     "dockerComposeFile": "docker-compose.yml",
     "service": "web",
     "workspaceFolder": "/workspace",
