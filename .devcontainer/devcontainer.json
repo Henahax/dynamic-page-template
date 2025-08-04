@@ -3,7 +3,7 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "web",
     "workspaceFolder": "/workspace",
-    "postCreateCommand": "npm install",
+    "postCreateCommand": "npm install && npm run db:seed",
     "customizations": {
         "vscode": {
             "extensions": [

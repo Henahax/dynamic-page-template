@@ -1,4 +1,4 @@
-import { env } from '$env/dynamic/private';
+const env = process.env;
 import { db } from './index';
 import { user, post } from './schema';
 
