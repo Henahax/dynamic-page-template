@@ -11,6 +11,8 @@ services:
       - ..:/workspace:cached
     ports:
       - 5173:5173
+    depends_on:
+      - db
     command: npm run dev
 
   db:
