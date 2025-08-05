@@ -6,7 +6,7 @@ export async function GET(event) {
     const posts = await db
         .select({
             id: user.id,
-            text: user.name
+            name: user.name
         })
         .from(user)
     return json(posts);

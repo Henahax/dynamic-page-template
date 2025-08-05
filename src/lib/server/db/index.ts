@@ -1,8 +1,10 @@
+import { config } from 'dotenv';
+config(); // Load .env into process.env
+
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import * as schema from './schema';
 
-// Use process.env for universal compatibility
 const env = process.env;
 
 if (!env.DATABASE_URL) throw new Error('DATABASE_URL is not set');

@@ -1,13 +1,15 @@
 <script lang="ts">
 	let { data } = $props();
+
+	console.log(data.users);
 </script>
 
 <h1 class="text-xl">henahax dynamic-page-template</h1>
 
-<ul>
+<ul class="flex flex-col gap-2">
 	{#each data.posts as post}
 		<li>
-			<div>{post.username}</div>
+			<div class="text-sm">{post.username}:</div>
 			<div>{post.text}</div>
 		</li>
 	{/each}
