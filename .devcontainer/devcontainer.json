@@ -10,7 +10,8 @@
                 "svelte.svelte-vscode",
                 "esbenp.prettier-vscode",
                 "bradlc.vscode-tailwindcss",
-                "drizzle-team.drizzle-orm-snippets"
+                "drizzle-team.drizzle-orm-snippets",
+                "ms-ossdata.vscode-pgsql"
             ]
         }
     }
