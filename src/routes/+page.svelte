@@ -1,7 +1,5 @@
 <script lang="ts">
 	let { data } = $props();
-
-	console.log(data.users);
 </script>
 
 <h1 class="text-xl">henahax dynamic-page-template</h1>
@@ -15,7 +13,7 @@
 	{/each}
 </ul>
 
-<form class="grid w-96 grid-cols-[auto_1fr] gap-4">
+<form class="grid w-96 grid-cols-[auto_1fr] gap-4" method="POST" action="/newPost">
 	<label for="username">Username:</label>
 	<select id="userId" name="userId" required>
 		{#each data.users as user}
